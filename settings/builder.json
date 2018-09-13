@@ -26,7 +26,7 @@
     "orientation": "portrait"
   },
   "startScene": "4b238958-2994-4d40-9e7c-1cdab1d56672",
-  "title": "WxOpenDataView",
+  "title": "wechatgame-subcontext",
   "webOrientation": "auto",
   "wechatgame": {
     "REMOTE_SERVER_ROOT": "",
