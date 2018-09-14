@@ -24,7 +24,28 @@ cc.Class({
         wx.onMessage(self.onMessage.bind(self));
 
         wx.getFriendCloudStorage({
+            keyList: ["test_cloud_storage"],
             success: function (res) {
+                console.log(res);
+                let friends = res.data;
+                console.log("getFriendCloudStorage success");
+                // do something
+                // for (let i = 0; i < 5; i++) {
+                //     let friend = res.data[i];
+                //     if (!_self.preSettingData(friend, ' stop getting friends\' infos')) {
+                //         return;
+                //     }
+                // }
+            },
+            fail: function (res) {
+                console.log(res);
+            }
+        });
+
+        wx.getUserCloudStorage({
+            keyList: ["test_cloud_storage"],
+            success: function (res) {
+                console.log("getUserCloudStorage success");
                 console.log(res);
                 let friends = res.data;
                 // do something
